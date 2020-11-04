@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Raghav Gupta</title>
+  </head>
+  <body style="background-color:#305478;">
+    <article>
+        <header>
+          <h1 style="color: yellow;font-size: 50px;font-family: 'Courier New', Courier, monospace;text-align: center;">Site Under Maintenance</h1>
+          
+          
+        
+        </header>
+        <p style="color: white;">Check my youtube channel <a href="http://youtube.com/raghavguptatrickery">http://youtube.com/raghavguptatrickery</a> for magic tricks.
+        </p>
+       
+      </article>
+   
+  </body>
+  <script>
+       (function () {
+    var div = document.createElement("div");
+    document.getElementsByTagName('body')[0].appendChild(div);
+    div.outerHTML = "<div id='botDiv' style='height: 38px; position: fixed; margin-left: 1100px; bottom: 0; z-index: 1000; background-color: #fff'><div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer;'></div><iframe width='400px' height='600px' background-color: #FF0000 src='https://bot.wdgautomation.com/integration/BR2_DEMO'></iframe></div>"; 
+
+    document.querySelector('body').addEventListener('click', function (e) {
+        e.target.matches = e.target.matches || e.target.msMatchesSelector;
+        if (e.target.matches('#botTitleBar')) { 
+            var botDiv = document.querySelector('#botDiv'); 
+            botDiv.style.height = botDiv.style.height == '600px' ? '38px' : '600px';
+        };
+    });
+}());
+  </script>
+</html>
